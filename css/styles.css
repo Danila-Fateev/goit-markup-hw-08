@@ -159,7 +159,7 @@ a {
 }
 
 .advantage-headline {
-  display: none;
+  visibility: hidden;
 }
 
 .picture-headline,
@@ -295,7 +295,7 @@ a:focus {
 }
 
 .portfolio-headline {
-  display: none;
+  visibility: hidden;
 }
 
 .portfolio-btn-list {
