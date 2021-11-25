@@ -245,7 +245,7 @@ a {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-right: 0px;
   margin-bottom: 20px;
   font-family: Raleway;
