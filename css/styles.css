@@ -17,6 +17,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -97,7 +98,7 @@ a {
   color: var(--text-color);
 }
 
-.current {
+.site-nav-link.current {
   color: var(--accent-color);
 }
 
@@ -123,6 +124,10 @@ a {
   padding: 200px 0;
 }
 
+.hero-bg {
+  background-color: var(--hero-bg-color);
+}
+
 .hero-headline {
   font-weight: 900;
   font-size: 44px;
@@ -137,8 +142,6 @@ a {
 .hero-btn {
   display: block;
   margin: 0 auto;
-  height: 50px;
-  width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -147,7 +150,8 @@ a {
   background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
-  border: none;
+  border: transparent;
+  padding: 10.5px 26px;
 }
 
 .hero-btn:active {
@@ -191,11 +195,11 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  white-space: pre;
 }
 
 .picture-list {
   display: flex;
-  justify-content: center;
 }
 
 .picture-item:not(:last-of-type) {
@@ -204,7 +208,6 @@ a {
 
 .team-list {
   display: flex;
-  justify-content: center;
 }
 
 .team-item {
@@ -234,26 +237,36 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-picture {
   margin-bottom: 30px;
 }
 
-footer .logo {
+.footer-logo {
   display: block;
   margin-right: 0px;
   margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
-footer .studio {
+.footer-studio {
   color: var(--header-bg-color);
 }
 
-.background {
+.footer {
   background-color: var(--footer-bg-color);
   padding: 60px 0;
+}
+
+.address-item:not(:last-of-type) {
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -264,7 +277,7 @@ footer .studio {
   color: var(--header-bg-color);
 }
 
-footer .contacts-link {
+.address-contacts-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -308,9 +321,10 @@ a:focus {
   background-color: var(--btn-bg-color);
   border-radius: 4px;
   margin-bottom: 50px;
-  height: 38px;
   cursor: pointer;
-  border: none;
+  border: transparent;
+  margin: 0px;
+  padding: 5.5px 17.25px;
 }
 
 .portfolio-btn.current {
@@ -332,19 +346,18 @@ a:focus {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--portfolio-card-gap));
-  margin-left: calc(-1 * var(--portfolio-card-gap));
+  margin-bottom: calc(-1 * var(--portfolio-card-gap));
+  margin-right: calc(-1 * var(--portfolio-card-gap));
 }
 
 .portfolio-item {
-  margin-top: var(--portfolio-card-gap);
-  margin-left: var(--portfolio-card-gap);
-  flex-basis: calc(100% / 3 - var(--portfolio-card-gap));
-  border: 1px solid #eeeeee;
+  margin-bottom: var(--portfolio-card-gap);
+  margin-right: var(--portfolio-card-gap);
+  flex-basis: calc((100% - 3 * var(--portfolio-card-gap)) / 3);
 }
 
-.portfolio-picture {
-  margin-bottom: 30px;
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .portfolio-title {
@@ -353,7 +366,9 @@ a:focus {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
-  margin: 0 24px 4px;
+  padding: 0 24px 4px;
+  white-space: nowrap;
+  padding-top: 30px;
 }
 
 .portfolio-text {
@@ -362,4 +377,9 @@ a:focus {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   padding: 0 24px 20px;
+}
+
+.portfolio-card-border {
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
