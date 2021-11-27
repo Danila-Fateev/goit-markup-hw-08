@@ -181,7 +181,8 @@ a {
 }
 
 .picture-headline,
-.team-headline {
+.team-headline,
+.clients-headline {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -442,7 +443,8 @@ a:focus {
   fill: #afb1b8;
 }
 
-.team-socials-icon-block:hover {
+.team-socials-icon-block:hover,
+.team-socials-icon-block:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
@@ -452,9 +454,40 @@ a:focus {
   height: 20px;
 }
 
-.team-socials-icon:hover {
-}
-
 .team-socials-item:not(:last-of-type) {
   margin-right: 10px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.clients-icon-block {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-icon-block:hover,
+.clients-icon-block:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
