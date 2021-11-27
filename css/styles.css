@@ -439,19 +439,26 @@ a:focus {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  fill: #afb1b8;
 }
 
-.team-socials-icon-block:hover,
-.team-socials-icon-block:focus {
+.team-socials-links {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+}
+
+.team-socials-links:hover,
+.team-socials-links:focus {
   background-color: var(--accent-color);
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .team-socials-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .team-socials-item:not(:last-of-type) {
@@ -472,12 +479,8 @@ a:focus {
   display: inline-flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
   justify-content: center;
   align-items: center;
-  color: #afb1b8;
 }
 
 .clients-icon {
@@ -486,8 +489,72 @@ a:focus {
   fill: currentColor;
 }
 
-.clients-icon-block:hover,
-.clients-icon-block:focus {
+.clients-link {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.address-block {
+  margin-right: 70px;
+}
+
+.join-headline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.join-list {
+  display: flex;
+}
+
+.join-icon-block {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.join-link {
+  display: inline-block;
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-link:hover,
+.join-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.join-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
