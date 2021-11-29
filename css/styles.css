@@ -167,11 +167,6 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.advantage-headline,
-.portfolio-headline {
-  display: none;
-}
-
 .picture-headline,
 .team-headline,
 .clients-headline {
