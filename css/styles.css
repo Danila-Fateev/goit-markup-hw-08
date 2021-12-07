@@ -512,6 +512,10 @@ a:focus {
   margin-right: 70px;
 }
 
+.join-block {
+  margin-right: 93px;
+}
+
 .join-headline {
   font-weight: 700;
   font-size: 14px;
@@ -694,6 +698,7 @@ a:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea {
@@ -703,6 +708,12 @@ a:focus {
   width: 448px;
   height: 120px;
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .textarea::placeholder {
@@ -714,6 +725,7 @@ a:focus {
 }
 
 .modal-label {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -749,6 +761,7 @@ a:focus {
 .checkbox-text {
   display: inline-block;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .submit-btn {
@@ -787,13 +800,88 @@ a:focus {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .input-checkbox:checked + .checkbox-icon {
-  background-image: url("../Vector.svg");
+  background-image: url("../images/Vector.svg");
   background-size: contain;
   background-color: var(--accent-color);
   background-repeat: no-repeat;
-  background-origin: border-box;
+  background-origin: content-box;
   border: 2px solid var(--accent-color);
+}
+
+.modal-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: var(--text-color);
+  transform: translate(14px, 30px);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-text:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal-label:focus-within .modal-icon {
+  fill: var(--accent-color);
+}
+
+.follow-label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.email-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+
+.follow-btn {
+  padding: 10px 29px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.follow-btn:hover,
+.follow-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.follow-btn:active {
+  background-color: var(--accent-color-active);
+}
+
+.follow-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }

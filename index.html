@@ -64,14 +64,24 @@
                             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
                             <label class="modal-label"><span class="label-title">Имя</span>
                                 <input type="text" name="username" placeholder=" " autocomplete="off" class="input-text">
+                                <svg class="modal-icon">
+                                    <use href="./images/icons.svg#icon-person"></use>
+                                </svg>
+                            
                             </label>
                             
                             <label class="modal-label"><span class="label-title">Телефон</span>
-                                <input type="tel" name="telephone" placeholder=" " autocomplete="on" class="input-text">
+                                <input type="tel" name="telephone" placeholder=" " class="input-text">
+                                <svg class="modal-icon">
+                                    <use href="./images/icons.svg#icon-phone-black"></use>
+                                </svg>
                             </label>
 
                             <label class="modal-label"><span class="label-title">Почта</span>
-                                <input type="email" name="email" placeholder=" " autocomplete="on" class="input-text">
+                                <input type="email" name="email" placeholder=" " autocomplete="off" class="input-text">
+                                <svg class="modal-icon">
+                                    <use href="./images/icons.svg#icon-email-black"></use>
+                                </svg>
                             </label>
 
                             <label class="modal-label-textarea"><span class="label-title">Комментарий</span>
@@ -433,6 +443,13 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="follow-block">
+                <form>
+                    <label for="email" class="follow-label">Подпишитесь на рассылку</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" class="email-input">
+                    <button type="submit" class="follow-btn">Подписаться<svg class="follow-icon"><use href="./images/icons.svg#icon-send"></use></svg></button>
+                </form>
             </div>
         </div>
     </footer>
