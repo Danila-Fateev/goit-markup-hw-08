@@ -20,13 +20,8 @@ img {
   height: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+.headline,
+.text {
   margin: 0;
 }
 
@@ -583,7 +578,7 @@ a:focus {
   height: 70px;
 }
 
-.label-text {
+.label__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
