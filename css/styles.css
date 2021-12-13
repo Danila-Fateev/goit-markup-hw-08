@@ -180,7 +180,7 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.picture-headline,
+.picture__headline,
 .team-headline,
 .clients-headline {
   font-weight: 700;
@@ -217,11 +217,11 @@ a {
   white-space: pre;
 }
 
-.picture-list {
+.picture__list {
   display: flex;
 }
 
-.picture-item:not(:last-child) {
+.picture__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -567,7 +567,7 @@ a:focus {
   padding: 30px 0;
 }
 
-.picture-box {
+.picture__box {
   position: relative;
 }
 
