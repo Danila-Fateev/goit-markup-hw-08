@@ -571,7 +571,7 @@ a:focus {
   position: relative;
 }
 
-.label {
+.picture__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -640,7 +640,6 @@ a:focus {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
   background-color: #fff;
   top: 50%;
   left: 50%;
@@ -680,11 +679,11 @@ a:focus {
   fill: var(--accent-color);
 }
 
-.modal-form {
+.modal__form {
   padding: 40px;
 }
 
-.form-text {
+.form__text {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -694,14 +693,14 @@ a:focus {
   margin-bottom: 12px;
 }
 
-.input-text {
+.label__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea {
+.label__textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
   resize: none;
@@ -711,12 +710,12 @@ a:focus {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea:focus-within {
+.label__textarea:focus-within {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.textarea::placeholder {
+.label__textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -724,20 +723,20 @@ a:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-label {
+.form__label {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal-label-textarea {
+.form__label-textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.label-title {
+.label__title {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -745,7 +744,7 @@ a:focus {
   color: var(--second-text-color);
 }
 
-.modal-label-checkbox {
+.form__label-checkbox {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -758,7 +757,7 @@ a:focus {
   cursor: pointer;
 }
 
-.agreement-link {
+.label-checkbox__link {
   color: var(--accent-color);
   text-decoration: underline;
 }
@@ -789,11 +788,11 @@ a:focus {
   background-color: var(--accent-color-active);
 }
 
-.input-checkbox {
+.checkbox {
   appearance: none;
 }
 
-.checkbox-icon {
+.checkbox__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -802,9 +801,10 @@ a:focus {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-position: center;
 }
 
-.input-checkbox:checked + .checkbox-icon {
+.checkbox:checked + .checkbox__icon {
   background-image: url("../images/Vector.svg");
   background-size: contain;
   background-color: var(--accent-color);
@@ -813,7 +813,7 @@ a:focus {
   border: 2px solid var(--accent-color);
 }
 
-.modal-icon {
+.label__icon {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -822,12 +822,12 @@ a:focus {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-text:focus-within {
+.label__input:focus-within {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.modal-label:focus-within .modal-icon {
+.form__label:focus-within .label__icon {
   fill: var(--accent-color);
 }
 
