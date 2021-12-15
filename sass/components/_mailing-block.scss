@@ -1,0 +1,56 @@
+.mailing {
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  &__btn {
+    padding: 10px 29px;
+    border-radius: 4px;
+    border: none;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__btn:active {
+    background-color: $accent-color-active;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}
+
+.email-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  color: #ffffff;
+  width: 358px;
+}
