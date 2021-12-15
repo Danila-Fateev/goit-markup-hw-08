@@ -1,0 +1,24 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $second-text-color;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

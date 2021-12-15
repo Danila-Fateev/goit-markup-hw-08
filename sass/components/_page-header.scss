@@ -1,0 +1,9 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  color: $header-bg-color;
+}
+
+.page-header__content {
+  display: flex;
+  height: 80px;
+}
