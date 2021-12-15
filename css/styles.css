@@ -748,7 +748,7 @@
   cursor: pointer;
 }
 
-.label-checkbox__link {
+.checkbox__link {
   color: var(--accent-color);
   text-decoration: underline;
 }
