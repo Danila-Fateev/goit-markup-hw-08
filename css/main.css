@@ -493,6 +493,12 @@ a:hover, a:focus {
   background-color: #0a6fc2;
 }
 
+.advantage__title {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .advantage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,6 +978,12 @@ a:hover, a:focus {
       flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+}
+
+.portfolio__title {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 .portfolio__item {

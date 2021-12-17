@@ -5,6 +5,12 @@
   margin-left: $portfolio-card-gap * -1;
 }
 
+.portfolio__title {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .portfolio__item {
   margin-top: $portfolio-card-gap;
   margin-left: $portfolio-card-gap;
