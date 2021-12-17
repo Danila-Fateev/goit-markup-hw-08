@@ -1,9 +1,9 @@
 .footer {
   background-color: $footer-bg-color;
   padding: 60px 0;
+}
 
-  &__container {
-    display: flex;
-    align-items: baseline;
-  }
+.footer__container {
+  display: flex;
+  align-items: baseline;
 }
