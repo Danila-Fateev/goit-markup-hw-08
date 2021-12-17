@@ -1,4 +1,4 @@
-.portfolio-btn {
+.filter__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -29,21 +29,21 @@
   }
 }
 
-.portfolio-btn__list {
+.filter__list {
   display: flex;
   justify-content: center;
 }
 
-.portfolio-btn__item {
+.filter__item {
   margin-bottom: 50px;
 }
 
-.portfolio-btn__item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-btn--current {
-  @extend .portfolio-btn;
+.filter__btn--current {
+  @extend .filter__btn;
   background-color: $accent-color;
   color: $header-bg-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),

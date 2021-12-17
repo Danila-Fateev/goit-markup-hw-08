@@ -36,8 +36,10 @@
   cursor: pointer;
   border: transparent;
   padding: 10.5px 26px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__btn:active {
+  &:active {
     background-color: $accent-color-active;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
