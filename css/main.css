@@ -72,7 +72,7 @@ a:hover, a:focus {
   margin-bottom: 20px;
 }
 
-.studio {
+.logo__studio {
   color: #212121;
 }
 
@@ -182,7 +182,7 @@ a:hover, a:focus {
   background-color: #2f303a;
 }
 
-.hero__headline {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -249,7 +249,7 @@ a:hover, a:focus {
   opacity: 1;
 }
 
-.modal__form {
+.form {
   padding: 40px;
 }
 
@@ -491,7 +491,7 @@ a:hover, a:focus {
   margin-right: 30px;
 }
 
-.advantage__title {
+.advantage__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -525,7 +525,7 @@ a:hover, a:focus {
           justify-content: center;
 }
 
-.picture__headline {
+.picture__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -602,7 +602,7 @@ a:hover, a:focus {
   background-color: #f5f4fa;
 }
 
-.team__headline {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -629,7 +629,7 @@ a:hover, a:focus {
   margin-right: 30px;
 }
 
-.team__title {
+.team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -996,7 +996,7 @@ a:hover, a:focus {
           transform: translateY(0%);
 }
 
-.portfolio__title {
+.portfolio__subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
