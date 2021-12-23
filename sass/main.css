@@ -527,6 +527,10 @@ a:hover, a:focus {
           justify-content: center;
 }
 
+.section--no-padding-top {
+  display: none;
+}
+
 .picture__title {
   font-weight: 700;
   font-size: 36px;
