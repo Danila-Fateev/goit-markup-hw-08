@@ -1,24 +1,32 @@
 .contacts {
   display: flex;
-  margin-left: auto;
-  align-items: center;
+  flex-direction: column-reverse;
+  margin-bottom: 64px;
+  margin-top: 50px;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 30px;
+.contacts__item:not(:first-child) {
+  margin-bottom: 32px;
 }
 
 .contacts__link {
-  display: inline-flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: $second-text-color;
-  align-items: center;
+}
+
+.contacts__link--other-font {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accent-color;
 }
 
 .contacts__icon {
+  display: none;
   fill: currentColor;
   margin-right: 10px;
 }

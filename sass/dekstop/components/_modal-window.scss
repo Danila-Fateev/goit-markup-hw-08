@@ -1,0 +1,213 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.1);
+  }
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.form {
+  padding: 40px;
+}
+
+.modal__btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 125ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover .button__pic,
+  &:focus .button__pic {
+    fill: $accent-color;
+  }
+}
+
+.button__pic {
+  fill: #000;
+  width: 11px;
+  height: 11px;
+  display: inline-flex;
+  align-self: center;
+  justify-self: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color;
+  margin-bottom: 12px;
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &:focus-within .label__icon {
+    fill: $accent-color;
+  }
+}
+
+.form__label-textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form__label-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $second-text-color;
+  cursor: pointer;
+}
+
+.label__title {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: $second-text-color;
+}
+
+.label__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus-within {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.label__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: $text-color;
+  transform: translate(14px, 30px);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label__textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 12px 16px;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus-within {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.checkbox {
+  appearance: none;
+
+  &:checked + .checkbox__icon {
+    background-image: url("../images/Vector.svg");
+    background-size: contain;
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    border: 2px solid $accent-color;
+  }
+}
+
+.checkbox__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $text-color;
+  border-radius: 2px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-position: center;
+}
+
+.checkbox__link {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+  border: none;
+  border-radius: 4px;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    background-color: $accent-color-active;
+  }
+}

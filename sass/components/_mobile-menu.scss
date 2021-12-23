@@ -1,0 +1,14 @@
+.mobile-menu {
+  height: 100vh;
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 48px;
+  position: absolute;
+  background-color: #fff;
+  top: 60px;
+  outline: 2px solid teal;
+}
+
+.is-open {
+  display: block;
+}
