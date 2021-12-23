@@ -1,14 +1,17 @@
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   color: $text-color;
 }
+
 .team {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team__item {
@@ -19,7 +22,7 @@
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__subtitle {
@@ -42,5 +45,5 @@
 }
 
 .team__card-block {
-  padding: 30px 0;
+  padding: 30px 0 24px;
 }
