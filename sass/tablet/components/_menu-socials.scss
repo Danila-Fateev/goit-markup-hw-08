@@ -1,0 +1,24 @@
+.menu-socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-socials__item:not(:last-child):after {
+  content: "|";
+  font-size: 22px;
+  color: rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
