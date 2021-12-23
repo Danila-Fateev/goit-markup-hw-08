@@ -6,10 +6,13 @@
 
 .advantage {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantage__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .advantage__subtitle {
@@ -19,6 +22,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 9px;
+  text-align: center;
 }
 
 .advantage__text {
@@ -26,12 +30,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $second-text-color;
-  white-space: pre;
 }
 
 .advantage__icon-block {
   display: inline-flex;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;

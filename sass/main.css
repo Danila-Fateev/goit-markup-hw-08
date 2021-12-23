@@ -477,10 +477,20 @@ a:hover, a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advantage__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .advantage__subtitle {
@@ -490,6 +500,7 @@ a:hover, a:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 9px;
+  text-align: center;
 }
 
 .advantage__text {
@@ -497,14 +508,13 @@ a:hover, a:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  white-space: pre;
 }
 
 .advantage__icon-block {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
