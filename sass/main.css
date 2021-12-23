@@ -1053,6 +1053,7 @@ a:hover, a:focus {
   position: absolute;
   background-color: #fff;
   top: 0;
+  overflow: hidden;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
