@@ -1,7 +1,7 @@
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -11,11 +11,12 @@
 .clients {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 30px;
 }
 
 .clients__icon {
@@ -26,7 +27,8 @@
 
 .clients__link {
   display: flex;
-  width: 170px;
+
+  width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
