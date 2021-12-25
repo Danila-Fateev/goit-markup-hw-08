@@ -14,3 +14,11 @@
 .mobile-menu.is-hidden {
   transform: translateY(-100%);
 }
+
+// tablet styles
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

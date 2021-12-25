@@ -8,5 +8,14 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  height: 60px;
+  min-height: 60px;
+}
+
+// tablet styles
+
+@media screen and (min-width: 768px) {
+  .page-header__content {
+    align-items: center;
+    min-height: 80px;
+  }
 }

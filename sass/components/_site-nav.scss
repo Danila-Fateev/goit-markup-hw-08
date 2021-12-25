@@ -3,3 +3,41 @@
     display: none;
   }
 }
+
+// tablet styles
+
+@media screen and (min-width: 768px) {
+  .site-nav__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .site-nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-color;
+    padding: 32px 0;
+  }
+
+  .site-nav__link--current {
+    color: $accent-color;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}
