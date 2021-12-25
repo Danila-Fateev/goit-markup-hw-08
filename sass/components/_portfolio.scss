@@ -13,9 +13,9 @@
 }
 
 .portfolio__item {
-  // margin-top: $portfolio-card-gap;
-  // margin-left: $portfolio-card-gap;
-  // flex-basis: calc(100% / 3 - $portfolio-card-gap);
+  margin-top: $portfolio-card-gap;
+  margin-left: $portfolio-card-gap;
+  flex-basis: calc(100% / 3 - $portfolio-card-gap);
 }
 
 .portfolio__link {

@@ -1209,7 +1209,10 @@ a:hover, a:focus {
 }
 
 .portfolio__item {
-  width: 100%;
+  margin-top: 30px;
+  margin-left: 30px;
+  -ms-flex-preferred-size: calc(100% / 3 - $portfolio-card-gap);
+      flex-basis: calc(100% / 3 - $portfolio-card-gap);
 }
 
 .portfolio__link {
@@ -1218,7 +1221,6 @@ a:hover, a:focus {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
 }
 
 .portfolio__link:hover, .portfolio__link:focus {
