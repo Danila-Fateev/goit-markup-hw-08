@@ -93,9 +93,6 @@ a:hover, a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
   min-height: 60px;
 }
@@ -133,6 +130,9 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 768px) {
+  .site-nav {
+    margin-left: 93px;
+  }
   .site-nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -183,6 +183,7 @@ a:hover, a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: auto;
   }
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;

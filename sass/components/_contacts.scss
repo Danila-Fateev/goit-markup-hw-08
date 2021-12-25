@@ -9,6 +9,7 @@
   .contacts {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
 
   .contacts__item:not(:last-child) {

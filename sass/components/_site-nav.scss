@@ -7,6 +7,10 @@
 // tablet styles
 
 @media screen and (min-width: 768px) {
+  .site-nav {
+    margin-left: 93px;
+  }
+
   .site-nav__list {
     display: flex;
     align-items: center;
