@@ -648,8 +648,10 @@ a:hover, a:focus {
           align-items: center;
 }
 
-.advantage__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .advantage__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantage__subtitle {
@@ -688,18 +690,12 @@ a:hover, a:focus {
 
 @media screen and (min-width: 768px) {
   .advantage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -713,8 +709,30 @@ a:hover, a:focus {
   .advantage__item:nth-child(odd) {
     margin-right: 30px;
   }
+  .advantage__subtitle {
+    text-align: start;
+  }
   .advantage__icon-block {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .advantage__item {
+    width: 354px;
+  }
+  .advantage__item {
+    margin-bottom: 0;
+  }
+  .advantage__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .advantage__icon-block {
+    width: 100%;
   }
 }
 
