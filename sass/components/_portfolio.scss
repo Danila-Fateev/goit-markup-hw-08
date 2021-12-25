@@ -1,6 +1,7 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: $portfolio-card-gap * -1;
   margin-left: $portfolio-card-gap * -1;
 }
