@@ -10,3 +10,10 @@
 .section--other-background {
   background-color: #f5f4fa;
 }
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

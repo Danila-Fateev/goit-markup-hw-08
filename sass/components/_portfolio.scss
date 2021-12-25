@@ -21,6 +21,7 @@
 .portfolio__link {
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -73,12 +74,10 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio__picture {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-  }
+.portfolio__picture {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
 // tablet styles
@@ -88,11 +87,19 @@
     padding: 49px 24px;
   }
 
-  .portfolio__picture {
-    object-fit: cover;
+  .portfolio__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+// dekstop
+
+@media screen and (min-width: 1200px) {
+  .portfolio__overlay__text {
+    padding: 63px 24px;
   }
 
   .portfolio__item {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc((100% / 3 - 30px);
   }
 }
