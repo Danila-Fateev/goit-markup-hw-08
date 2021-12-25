@@ -73,3 +73,33 @@
     align-self: center;
   }
 }
+
+// dekstop
+
+@media screen and (min-width: 1200px) {
+  .mailing-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-left: 93px;
+  }
+
+  .mailing__form {
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .mailing__btn {
+    margin-left: 12px;
+  }
+
+  .mailing__label {
+    text-align: start;
+  }
+
+  .email-input {
+    width: 358px;
+  }
+}

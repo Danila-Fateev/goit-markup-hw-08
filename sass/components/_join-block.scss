@@ -45,6 +45,16 @@
 
 @media screen and (min-width: 768px) {
   .join-block {
-    margin-left: auto;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-block {
+    margin-left: 70px;
+  }
+
+  .join__list {
+    margin-bottom: 0;
   }
 }

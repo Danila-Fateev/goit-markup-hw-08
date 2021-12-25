@@ -17,3 +17,11 @@
     align-items: baseline;
   }
 }
+
+// dekstop
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-wrap: nowrap;
+  }
+}

@@ -21,3 +21,12 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+// dekstop
+
+@media screen and (min-width: 1200px) {
+  .address-block {
+    margin-bottom: 0;
+    text-align: start;
+  }
+}
