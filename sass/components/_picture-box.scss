@@ -1,5 +1,7 @@
-.section--no-padding-top {
-  display: none;
+@media screen and (max-width: 1200px) {
+  .section--no-padding-top {
+    display: none;
+  }
 }
 
 .picture__title {
@@ -55,4 +57,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+// dekstop styles
+
+@media screen and (min-width: 1200px) {
+  .section--no-padding-top {
+    padding-top: 0;
+  }
 }

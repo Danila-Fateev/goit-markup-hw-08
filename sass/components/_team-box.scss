@@ -47,3 +47,27 @@
 .team__card-block {
   padding: 30px 0 24px;
 }
+
+// tablet styles
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .team__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .team__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .team__card-block {
+    padding: 30px 0 24px;
+  }
+}
