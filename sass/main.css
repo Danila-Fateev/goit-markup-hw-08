@@ -46,6 +46,16 @@ a:hover, a:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -94,7 +104,7 @@ a:hover, a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  min-height: 60px;
+  height: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -102,7 +112,7 @@ a:hover, a:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 80px;
+    height: 80px;
   }
 }
 
@@ -185,9 +195,15 @@ a:hover, a:focus {
             flex-direction: column;
     margin-left: auto;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+@media screen and (min-width: 768px) {
   .contacts__link {
     font-weight: 500;
     font-size: 12px;
@@ -204,6 +220,26 @@ a:hover, a:focus {
   .contacts__icon {
     margin-right: 8px;
     fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -261,8 +297,6 @@ a:hover, a:focus {
 }
 
 .hero__title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -296,6 +330,16 @@ a:hover, a:focus {
   background-color: #0a6fc2;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .backdrop {
@@ -536,6 +580,7 @@ a:hover, a:focus {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-position: center;
+  margin-right: 8px;
 }
 
 .checkbox__link {
@@ -569,6 +614,16 @@ a:hover, a:focus {
 
 .submit-btn:active {
   background-color: #0a6fc2;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+  .form__label-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .advantage__title {

@@ -6,9 +6,8 @@
 .page-header__content {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
   position: relative;
-  min-height: 60px;
+  height: 60px;
 }
 
 // tablet styles
@@ -16,6 +15,6 @@
 @media screen and (min-width: 768px) {
   .page-header__content {
     align-items: center;
-    min-height: 80px;
+    height: 80px;
   }
 }

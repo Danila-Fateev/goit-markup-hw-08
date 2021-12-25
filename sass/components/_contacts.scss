@@ -12,8 +12,10 @@
     margin-left: auto;
   }
 
-  .contacts__item:not(:last-child) {
-    margin-bottom: 10px;
+  @media screen and (max-width: 1199px) {
+    .contacts__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   .contacts__link {
@@ -30,5 +32,24 @@
   .contacts__icon {
     margin-right: 8px;
     fill: currentColor;
+  }
+}
+
+// dekstop
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
