@@ -1214,6 +1214,8 @@ a:hover, a:focus {
 .portfolio__item {
   margin-top: 30px;
   margin-left: 30px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio__link {
@@ -1241,7 +1243,6 @@ a:hover, a:focus {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  white-space: nowrap;
 }
 
 .portfolio__text {
@@ -1252,8 +1253,6 @@ a:hover, a:focus {
 }
 
 .portfolio__card-border {
-  border: 1px solid #eeeeee;
-  border-top: none;
   padding: 20px 24px;
 }
 
@@ -1285,7 +1284,23 @@ a:hover, a:focus {
   .portfolio__picture {
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__overlay__text {
+    padding: 49px 24px;
+  }
+  .portfolio__picture {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .portfolio__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
   }
 }
 
