@@ -1,7 +1,7 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
   margin-top: $portfolio-card-gap * -1;
   margin-left: $portfolio-card-gap * -1;
 }
@@ -13,9 +13,9 @@
 }
 
 .portfolio__item {
-  margin-top: $portfolio-card-gap;
-  margin-left: $portfolio-card-gap;
-  flex-basis: calc(100% / 3 - $portfolio-card-gap);
+  // margin-top: $portfolio-card-gap;
+  // margin-left: $portfolio-card-gap;
+  // flex-basis: calc(100% / 3 - $portfolio-card-gap);
 }
 
 .portfolio__link {
