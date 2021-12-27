@@ -1274,7 +1274,7 @@ a:hover, a:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 30px;
+    margin-top: 60px;
   }
   .mailing__form {
     display: -webkit-box;
