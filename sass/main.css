@@ -1097,8 +1097,10 @@ a:hover, a:focus {
   }
 }
 
-.address-block {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .address-block {
+    margin-bottom: 60px;
+  }
 }
 
 .address__item:not(:last-child) {
