@@ -1079,9 +1079,8 @@ a:hover, a:focus {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1092,6 +1091,9 @@ a:hover, a:focus {
   .footer__container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -1126,6 +1128,10 @@ a:hover, a:focus {
   }
 }
 
+.join-block {
+  margin-bottom: 60px;
+}
+
 .join__headline {
   font-weight: 700;
   font-size: 14px;
@@ -1143,7 +1149,6 @@ a:hover, a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
 }
 
 .join__item:not(:last-child) {
@@ -1182,7 +1187,7 @@ a:hover, a:focus {
 
 @media screen and (min-width: 768px) {
   .join-block {
-    margin-left: 165px;
+    margin-bottom: 0;
   }
 }
 
@@ -1321,6 +1326,7 @@ a:hover, a:focus {
   }
   .email-input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 

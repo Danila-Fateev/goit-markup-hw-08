@@ -1,3 +1,7 @@
+.join-block {
+  margin-bottom: 60px;
+}
+
 .join__headline {
   font-weight: 700;
   font-size: 14px;
@@ -11,7 +15,6 @@
 .join__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .join__item:not(:last-child) {
@@ -45,7 +48,7 @@
 
 @media screen and (min-width: 768px) {
   .join-block {
-    margin-left: 165px;
+    margin-bottom: 0;
   }
 }
 
