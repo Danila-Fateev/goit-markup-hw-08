@@ -932,6 +932,10 @@ a:hover, a:focus {
     line-height: 1.17;
     margin-bottom: 50px;
   }
+  .team {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .socials {
@@ -985,7 +989,7 @@ a:hover, a:focus {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
 }
 
@@ -1051,6 +1055,11 @@ a:hover, a:focus {
 @media screen and (min-width: 1200px) {
   .clients__link {
     width: 170px;
+  }
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
