@@ -1,5 +1,8 @@
 .menu-socials {
   display: flex;
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
   align-items: center;
   justify-content: flex-start;
 }

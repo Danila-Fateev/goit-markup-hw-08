@@ -1083,8 +1083,14 @@ a:hover, a:focus {
 }
 
 @media screen and (max-width: 767px) {
-  .clients__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
+  .clients {
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients__item {
+    margin-top: 30px;
   }
 }
 
@@ -1398,6 +1404,9 @@ a:hover, a:focus {
                 -ms-grid-row-align: center;
             align-self: center;
   }
+  .email-input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1493,8 +1502,17 @@ a:hover, a:focus {
   .filter__item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .filter__item:nth-child(3) {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filter__item:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 
@@ -1685,6 +1703,14 @@ a:hover, a:focus {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media screen and (max-width: 479px) {
+  .menu-socials {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
 }
 
 .menu-socials__item:not(:last-child) {

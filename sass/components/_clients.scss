@@ -12,11 +12,14 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    margin-top: -30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .clients__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
+  .clients__item {
+    margin-top: 30px;
   }
 }
 
