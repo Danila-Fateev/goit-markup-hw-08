@@ -138,6 +138,7 @@ a:hover, a:focus {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+  word-wrap: break-word;
 }
 
 .menu-site-nav__link--current {
@@ -279,6 +280,7 @@ a:hover, a:focus {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  word-wrap: break-word;
 }
 
 .menu-contacts__link--other-font {
@@ -1668,7 +1670,7 @@ a:hover, a:focus {
 
 .mobile-menu {
   width: 100%;
-  padding: 48px 40px;
+  padding: 48px 0px 48px 40px;
   position: absolute;
   background-color: #fff;
   top: 0;
