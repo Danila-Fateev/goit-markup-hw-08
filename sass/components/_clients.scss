@@ -10,7 +10,7 @@
 
 .clients {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   @media screen and (max-width: 767px) {
     margin-top: -30px;
@@ -20,6 +20,14 @@
 @media screen and (max-width: 767px) {
   .clients__item {
     margin-top: 30px;
+  }
+
+  // .clients__item:nth-child(odd) {
+  //   margin-right: 30px;
+  // }
+
+  .clients__item {
+    width: calc(100% / 2 - 15px);
   }
 }
 
@@ -31,7 +39,7 @@
 
 .clients__link {
   display: flex;
-  width: 210px;
+  // width: 210px;
   min-height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;

@@ -1082,9 +1082,10 @@ a:hover, a:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -1100,6 +1101,10 @@ a:hover, a:focus {
   .clients__item {
     margin-top: 30px;
   }
+  .clients__item {
+    width: -webkit-calc(100% / 2 - 15px);
+    width: calc(100% / 2 - 15px);
+  }
 }
 
 .clients__icon {
@@ -1113,7 +1118,6 @@ a:hover, a:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 210px;
   min-height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
